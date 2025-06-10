@@ -1,0 +1,29 @@
+\documentclass[tikz,border=10pt]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+\begin{document}
+
+\begin{tikzpicture}
+  % Define the radius of the hexagon
+  \def\radius{3cm}
+
+  % Define the vertices of the hexagon
+  \foreach \i in {1,...,6} {
+    \coordinate (V\i) at ({\radius*cos(60*(\i-1))}, {\radius*sin(60*(\i-1))});
+  }
+
+  % % Draw edges for the complete graph K6
+  % \foreach \i in {1,...,6} {
+  %   \foreach \j in {1,...,6}
+  %     \draw[black!10!] (V\i) -- (V\j);
+  %   }
+
+  % Draw the vertices
+  \foreach \i in {1,...,6} {
+    \fill (V\i) circle (2pt);
+  }
+
+\end{tikzpicture}
+
+\end{document}
