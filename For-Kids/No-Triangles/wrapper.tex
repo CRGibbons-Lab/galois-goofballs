@@ -13,11 +13,17 @@
 \usepackage{tikz}
 \usetikzlibrary{calc,intersections}
 
+% \renewcommand{\arraystretch}{10}
+\setlength\tabcolsep{2cm}
+
+
 \pagestyle{empty}
 
 \begin{document}
     
-    \begin{huge} No Triangles! \end{huge}
+    \begin{huge} No Triangles! \end{huge} 
+    \hfill 
+    \includegraphics[scale=.05]{No Triangles QR Code.png}
 
     \hrulefill
 
@@ -112,60 +118,32 @@
 
     \clearpage
     %
-    \begin{multicols}{2}
-        \begin{center}
+    \begin{center}
+        \begin{tabular}{c | c}
         %
-            \input{pentagon-with-lines}
-            \vfill
-            \hrulefill
-            \vfill
-            \input{pentagon-with-lines}
-            \vfill
-            \hrulefill
-            \vfill
-            \input{pentagon-with-lines}
+            \input{pentagon-with-lines} & \input{hexagon-with-lines} \\[1cm]
+            \hline\\[1cm]
+            \input{pentagon-with-lines} & \input{hexagon-with-lines} \\[1cm]
+            \hline\\[1cm]
+            \input{pentagon-with-lines} & \input{hexagon-with-lines} \\[1cm]
+        \end{tabular}
+    \end{center}
+    %
+    \clearpage
+    %
+    \begin{center}
+        \begin{tabular}{c | c}
         %
-        \columnbreak
-        %
-            \input{hexagon-with-lines}
-            \vfill
-            \hrulefill
-            \vfill
-            \input{hexagon-with-lines}
-            \vfill
-            \hrulefill
-            \vfill
-            \input{hexagon-with-lines}
-        %
-        \clearpage
-        %
-            \input{pentagon-without-lines}
-            \vfill
-            \hrulefill
-            \vfill
-            \input{pentagon-without-lines}
-            \vfill
-            \hrulefill
-            \vfill
-            \input{pentagon-without-lines}
-        %
-        \columnbreak
-        %
-            \input{hexagon-without-lines}
-            \vfill
-            \hrulefill
-            \vfill
-            \input{hexagon-without-lines}
-            \vfill
-            \hrulefill
-            \vfill
-            \input{hexagon-without-lines}
-        %
-        \clearpage
-        %
-        \end{center}
-    \end{multicols}
-
+            \input{pentagon-without-lines} & \input{hexagon-without-lines} \\[1cm]
+            \hline\\[1cm]
+            \input{pentagon-without-lines} & \input{hexagon-without-lines} \\[1cm]
+            \hline\\[1cm]
+            \input{pentagon-without-lines} & \input{hexagon-without-lines} \\[1cm]
+        \end{tabular}
+    \end{center}
+    %
+    \clearpage
+    %
     \begin{Huge}
         No Triangles (in 25ish minutes)
     \end{Huge}
