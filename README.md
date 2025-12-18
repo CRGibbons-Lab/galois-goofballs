@@ -7,3 +7,8 @@ In this repository, you'll find various resources organized (loosely) by topic:
 - Proofs and Linear Algebra
 - Abstract Algebra and Number Theory
 - Applied Math in Social Context
+
+## Tools for Harried Professors
+
+For those unafraid of the terminal, I am turning my most common workflows into Gists.
+- See [YouGetTheGist.md](YouGetTheGist.md) for a catalog
